@@ -1,0 +1,18 @@
+﻿{
+    "Version":  "3.3.0",
+    "Channel":  "PORTABLE_PREVIEW",
+    "Product":  "ProTech Windows Care",
+    "PortableNoInstallation":  true,
+    "PrimaryExecutable":  "ProTech_Windows_Care_Setup.exe",
+    "OptionalInstallationSwitch":  "--setup-ui",
+    "RunRequirements":  [
+                            "Windows PowerShell 5.1",
+                            ".NET Framework",
+                            "WinGet optional for package actions"
+                        ],
+    "Copyright":  "Copyright (c) 2026 ProTech. All Rights Reserved.",
+    "Signature":  "NotSigned",
+    "SupportedTestedPlatform":  "Windows 11 Pro x64 Build 22621",
+    "Windows10ARM64Validation":  "UNVERIFIED",
+    "ActualWinGetAppXOperations":  "PENDING_VM_TEST"
+}

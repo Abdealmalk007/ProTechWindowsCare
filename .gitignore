@@ -1,0 +1,12 @@
+*.exe
+*.msi
+*.zip
+*.db
+*.sqlite
+*.sqlite3
+*.env
+*.pfx
+*.p12
+*.pem
+*.key
+*.log

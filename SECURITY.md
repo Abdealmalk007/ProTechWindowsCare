@@ -1,0 +1,2 @@
+# Security, integrity and validation
+Download only from official ProTech GitHub Releases and verify SHA256 with SHA256SUMS.txt. This Portable Preview is **unsigned** (Authenticode: NotSigned); a copyright notice does not bypass SmartScreen. Test only in a disposable Windows 11 x64 VM before using destructive WinGet/AppX actions. App data cannot be guaranteed recoverable with System Restore. Keep independent backups. For private security disclosures contact protech.2025.2026@gmail.com; do not post customer data in public issues.
