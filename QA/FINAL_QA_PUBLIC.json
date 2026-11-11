@@ -1,16 +1,20 @@
 ﻿{
-    "Version":  "3.3.0 Portable Preview",
-    "VerifiedAt":  "2026-11-11T14:35:38.9632612+03:00",
+    "Version":  "3.3.1 Portable Preview",
+    "GeneratedAt":  "2026-11-11T15:20:22.0205835+03:00",
     "TestSystem":  "Windows 11 Pro x64 Build 22621",
-    "PassedGroups":  13,
-    "GUIAssertionsPassed":  38,
-    "Batch20ItemsSynthetic":  "PASS",
-    "PowerShellSeparateRunner":  "PASS",
-    "RestorePointDeniedWithoutElevation":  "PASS",
-    "ActualWinGetPackageUpdateDelete":  "NOT_TESTED_IN_VM",
-    "ActualAppXDeleteAndDataRecovery":  "NOT_TESTED_IN_VM",
-    "Windows10":  "NOT_VALIDATED",
-    "Windows11ARM64":  "NOT_VALIDATED",
-    "CodeSigning":  "UNSIGNED",
-    "PublicationStatus":  "PORTABLE_PREVIEW_FOR_EVALUATION"
+    "PassedRegressionGroups":  14,
+    "PassedGuiAssertions":  40,
+    "GuiAssertionErrors":  0,
+    "ResponsiveSizes":  [
+                            "980x620",
+                            "1280x800",
+                            "1592x829",
+                            "1920x1080"
+                        ],
+    "BatchSynthetic20Items":  "PASS",
+    "PowerShellSeparateRunnerSynthetic":  "PASS",
+    "RealAppUninstallAndUpgradeInVM":  "NOT TESTED",
+    "Windows10AndARM64":  "UNVERIFIED",
+    "Authenticode":  "UNSIGNED",
+    "ReleaseStatus":  "PORTABLE_PREVIEW_NOT_STABLE"
 }

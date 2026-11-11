@@ -1,21 +1,23 @@
-# Compatibility and validation matrix — v3.3.0
+# ProTech Windows Care 3.3.1 — test matrix
 
-| Environment / function | Result |
+| Item | Verification |
 |---|---|
-| Windows 11 Pro x64, Build 22621 | PASS: GUI, read-only inspection, synthetic batch execution |
-| 20-item MockFileSet batch and Undo | PASS |
-| Standalone PowerShell runner, 3 synthetic items | PASS |
-| Restore point refuses execution without Administrator/effective checkpoint | PASS |
-| Protected AppX not selectable | PASS |
-| Single EXE Portable with no sidecars | PASS |
-| Optional installer in isolated path | PASS |
-| Actual WinGet Install/Upgrade/Uninstall in VM | UNVERIFIED |
-| Actual AppX removal and application data recovery in VM | UNVERIFIED |
-| Windows Update repair execution | NOT IMPLEMENTED in BatchEngine |
-| Windows 10 x64 / x86 | UNVERIFIED |
-| Windows 11 ARM64 | UNVERIFIED |
-| Authenticode code signature | NOT SIGNED |
-| Win11 custom ISO Creator build | READINESS ONLY / BLOCKED |
-| System Restore new checkpoint on real device | NOT RUN DURING DEVELOPMENT |
+| Windows 11 Pro x64 build 22621 | PASS: GUI, read-only diagnostics and synthetic tests |
+| WinForms layout 980×620 | PASS |
+| WinForms layout 1280×800 | PASS |
+| WinForms layout 1592×829 (user's screenshot size) | PASS |
+| WinForms layout 1920×1080 | PASS |
+| Arabic selection counter | PASS UTF-8 localization |
+| Sidebar labels and navigation | PASS owner-drawn fixed 32px items |
+| All toolbar command icons | PASS GDI+ image exists |
+| Select All / Clear selection | PASS button click tests |
+| Dashboard shortcut to optional apps | PASS button click |
+| Synthetic 20-item batch execute & Undo | PASS |
+| Separate PowerShell runner synthetic batch | PASS |
+| Backup/restore-point guard | PASS synthetic fail-closed |
+| Real WinGet/ AppX updates & deletion in a VM | NOT TESTED |
+| Windows 10 x86/x64 / ARM64 | NOT VERIFIED |
+| Physical monitors at 125/150% system DPI | NOT VERIFIED |
+| Authenticode digital signature | NOT SIGNED |
 
-**Never infer Stable certification from successful synthetic tests.** Browser/UI/PowerShell changes on production Windows require user's per-operation approval and verified restore point. Windows 10 reached end of general support on 2025-10-14; this tool cannot supply OS security updates.
+**Preview only:** success for layout and synthetic operations must not be presented as stable certification for system-changing tasks. Restore points cannot guarantee application data recovery.

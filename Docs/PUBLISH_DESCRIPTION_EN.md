@@ -1,11 +1,9 @@
-# ProTech Windows Care v3.3.0 — Portable Preview
+# ProTech Windows Care v3.3.1 — Portable Preview
 
-**PORTABLE WINDOWS MAINTENANCE — NO INSTALLATION REQUIRED.**
+**PORTABLE — NO INSTALLATION REQUIRED.** Run `ProTech_Windows_Care_Setup.exe` directly from a folder or USB drive; optional setup only with `--setup-ui`.
 
-Double-click `ProTech_Windows_Care_Setup.exe` to run directly, including from USB. Optional installation is available only if you use `--setup-ui`.
+The 3.3.1 interface update fixes clipped and hidden buttons, makes the action bar wrap across responsive rows, improves sidebar item spacing, repairs corrupted Arabic selection-counter text, and replaces unreliable font symbols with clear color-coded GDI+ icons. Select All, Preview, Backup, guarded WinGet/AppX batch plans and Windows diagnostics are retained.
 
-Includes bilingual Arabic/English UI, select-all and batch filtering, protected application exclusions, color-coded icons, Windows diagnostics, and a reviewed PowerShell runner for multiple curated WinGet Install/Upgrade/Uninstall and optional current-user AppX removal. Each change requires an impact preview, SHA256-verified backup, explicit confirmation, Administrator UAC prompt, and **a new verified Windows System Restore point before any modification**. Results are journaled per item; pending items can be canceled.
+**Preview limitations:** UI/synthetic operations were tested on Windows 11 Pro x64 in four window sizes. Actual application upgrades/uninstalls have not yet passed independent VM testing, and application data undo is not guaranteed. Windows 10/ARM64 remain unverified. The executable is unsigned and may trigger SmartScreen.
 
-**Preview limitations:** Actual live package removal/update and application data recovery are **not VM-validated**. A restore point does not guarantee full recovery of application data, and Windows PowerShell commonly permits only one newly created checkpoint per 24 hours. Tested on Windows 11 Pro x64 for read-only and synthetic batch operations. Windows 10/ARM64 remain unverified. **Unsigned binary** (SmartScreen may warn).
-
-**© 2026 ProTech — All Rights Reserved** for original ProTech work. Third-party packages retain their own licenses.
+© 2026 ProTech. **All Rights Reserved** for original code, design and documentation; third-party components remain under their respective licenses.

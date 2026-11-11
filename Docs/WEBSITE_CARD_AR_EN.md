@@ -1,17 +1,18 @@
-# بطاقة alghad.digital
+# بطاقة برنامج alghad.digital
 
 ## عربي
-**ProTech Windows Care — أداة صيانة وتحسين ويندوز**
-**Portable — يعمل مباشرة دون الحاجة للتثبيت**
-واجهة عربية/إنجليزية، أزرار ملونة وأيقونات حسب الوظيفة، تحديد الكل والمعاينة قبل التعديل، تشغيل دفعات WinGet وAppX عبر PowerShell بعد نقطة استعادة ونسخة احتياطية وموافقة المستخدم.
-**الإصدار 3.3.0 Portable Preview | All Rights Reserved.**
-**زر التنزيل:** استخدم رابط EXE المباشر الحقيقي بعد نشره في GitHub Releases. لا تُخمن الرابط.
-**تحذير:** مسارات الحذف والتحديث الفعلية لم تُختبر على تطبيقات حقيقية داخل VM. الملف غير موقع وقد يعرض SmartScreen. Windows 10/ARM64 غير معتمدين.
+**ProTech Windows Care — مركز صيانة وتحسين Windows**
+**Portable — يعمل مباشرة دون الحاجة إلى التثبيت**
+واجهة حديثة بالعربية والإنجليزية، أزرار ملونة مع أيقونات واضحة، قائمة جانبية مرتبة، تحديد متعدد، معاينة التغييرات، حماية النسخ الاحتياطي ونقطة استعادة Windows قبل التعديلات المدعومة.
+**الإصدار:** 3.3.1 Portable Preview
+**الترخيص:** All Rights Reserved
+**التنزيل:** رابط EXE المباشر الفعلي بعد نشره في GitHub Releases؛ لا اختلاق روابط.
+**ملاحظة:** نسخة تجريبية غير موقّعة رقميًا، والعمليات المؤثرة لم تُعتمد بعد باختبارات VM.
 
 ## English
 **ProTech Windows Care — Windows maintenance and diagnostics**
 **PORTABLE — NO INSTALLATION REQUIRED**
-Batch selection, guarded PowerShell operations with verified restore points, optional AppX debloat and curated WinGet tasks.
-**3.3.0 Portable Preview | All Rights Reserved**
-**Download:** link to the actual verified EXE asset after GitHub publication.
-**Limitations:** Real package deletion/update not independently VM-tested; unsigned; Windows 10/ARM64 unverified.
+Responsive color-coded buttons with vector icons, Arabic/English UI, selection and item previews, Windows diagnostics and guarded changes with verified backups.
+**Version:** v3.3.1 Portable Preview | **License:** All Rights Reserved
+**Download:** verified GitHub Release EXE asset after publication.
+**Caution:** Unsigned preview; destructive app changes and Windows 10/ARM64 compatibility not certified.

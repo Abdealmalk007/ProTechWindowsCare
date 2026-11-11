@@ -1,12 +1,10 @@
-# Known limitations — v3.3.0 Preview
+# Known limitations — ProTech Windows Care 3.3.1
 
-1. Real WinGet and AppX actions are implemented and wired into the UI, but have not undergone destructive VM acceptance tests. Do not treat them as Stable-certified for important machines.
-2. The batch backup records application identity/version and does not guarantee restoration of app data. There is no automatic Undo for WinGet/AppX uninstalls; users must confirm the irreversible-data risk.
-3. The System Restore gate requires a *newly created* and verified restore point. Windows PowerShell 5.1 generally allows one checkpoint in a 24-hour period. No bypass or reuse of an old checkpoint occurs.
-4. Privilege escalation uses Windows User Account Control. If UAC is canceled or a standard-user admin profile cannot access the originating user data root, the operation fails safely.
-5. WinGet package state and version read-back are not fully independently verified in an isolated VM; engine reports process exit status and stops on nonzero error.
-6. Windows Update repair/installation, full privacy and startup batch adapters, and Win11 Creator remain incomplete or read-only; BIOS flash/TPM Clear/Defender disabling are not automated.
-7. Windows 10 x86/x64 and Windows 11 ARM64 compatibility and clean-machine DPI accessibility testing are not validated.
-8. No Authenticode signing certificate is available. The executable may show Unknown Publisher / SmartScreen warnings. All Rights Reserved is copyright, not digital signing.
-9. The single executable contains ProTech resources, but relies on system Windows PowerShell 5.1, .NET Framework and optional WinGet.
-10. The result is a Portable Preview suitable for evaluation and transparent beta/pre-release publishing, not a certified general Stable release.
+- The button/layout and navigation repair has been tested on Windows 11 Pro x64 at 980×620, 1280×800, 1592×829 and 1920×1080, but high-DPI physical monitors and accessibility screen readers still need independent validation.
+- At minimum window sizes with many section-specific actions, some actions may require scrolling within that section's toolbar; they are not removed.
+- Actual WinGet/AppX install/upgrade/uninstall commands have a guarded code path, but require controlled VM tests before Stable release.
+- Windows System Restore commonly limits creating a new checkpoint to one in 24 hours. The program blocks modifying actions rather than bypassing this policy.
+- Restore Points and package inventory backups do not guarantee recovery of user application data after removal.
+- Repairs without verified rollback, protected Windows components, firmware flashing, TPM clearing and security-service disabling are not automatically executed.
+- Windows 10 x86/x64 and ARM64 compatibility are not independently validated.
+- The EXE is not Authenticode-signed; SmartScreen/Unknown Publisher warnings are possible. The All Rights Reserved notice does not constitute a digital signature.

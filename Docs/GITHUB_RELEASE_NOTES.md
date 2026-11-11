@@ -1,20 +1,19 @@
-# ProTech Windows Care v3.3.0 — Portable Batch Preview
+# ProTech Windows Care v3.3.1 — Responsive Portable Preview
 
-**Portable / No installation required** — Download and double-click `ProTech_Windows_Care_Setup.exe`.
+**Portable — no installation required.** Download and run `ProTech_Windows_Care_Setup.exe` directly. Use `--setup-ui` only if you want optional installation.
 
-### Features
-- Multi-select and Select All (eligible items only), preview and contextual colored icon buttons.
-- Real batch execution paths wired for approved WinGet install/upgrade/uninstall and current-user allowlisted AppX removal; each runs through a separate Windows PowerShell process.
-- Per-item impact preview and journal, SHA256 backup checks, explicit user approval and UAC.
-- New, verified Windows System Restore point mandatory before the first Windows modification. Missing privileges, disabled protection or the daily checkpoint limit blocks all changes.
-- Cancel pending items and inspect individual operation outcomes.
-- Arabic/English UI and Windows hardware/repair diagnostics.
+## Fixed
+- Toolbar previously fixed at 53px no longer hides action buttons; it wraps into multiple visible rows and resizes with the window.
+- Sidebar navigation is wider, owner-drawn, consistently spaced and padded so Arabic section names are not cut off.
+- Selection counter renders correct Arabic text instead of corrupted encoding.
+- Action buttons use GDI+ vector-style icons with task-specific colors.
+- Improved distribution of vertical space so the data grid remains usable at smaller window sizes.
+- Cleaned up adjacent inline statements affecting Dashboard shortcuts, troubleshooting and report actions.
 
-### Verified QA
-13/13 test groups, 38 WinForms assertions, 20-item synthetic batch and rollback, three-item separate PowerShell process test, fail-closed restore point test. **No real program was deleted or upgraded during development.**
+## Tests
+Responsive UI smoke: 980×620, 1280×800, 1592×829 and 1920×1080. Previous guarded batch engine and synthetic rollback tests are retained.
 
-### Limitations
-This release is **Preview**, not Stable: no end-to-end installation/removal on isolated VM; no guaranteed recovery of deleted application data; Windows 10/ARM64 not validated; no Authenticode certificate. Antivirus/SmartScreen may warn about an unsigned publisher. See QA_REPORT.md and KNOWN_LIMITATIONS.md.
+## Limits
+**Preview only.** WinGet/AppX modifying paths require approvals, verified backup and newly verified System Restore Point, but real upgrades/uninstalls have NOT been VM-certified. Windows 10/ARM64 remain unverified. This EXE is **unsigned**; Unknown Publisher / SmartScreen warnings are possible.
 
-### Legal
-Copyright © 2026 ProTech. **All Rights Reserved** for original ProTech components. Microsoft and third-party assets under their respective licenses.
+**© 2026 ProTech — All Rights Reserved** for ProTech original source. Third-party programs keep their own licenses.

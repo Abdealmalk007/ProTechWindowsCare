@@ -1,14 +1,14 @@
-# ProTech Windows Care Changelog
+# CHANGELOG — ProTech Windows Care
 
-## v3.3.0 — Portable Batch Preview (2026-11-11)
+## 3.3.1 — Responsive UI Portable Preview (2026-11-11)
+- Fixed toolbar clipping caused by WrapContents=false and 53px static height.
+- Added dynamic vertical reflow for command/toolbox panels, including scroll fallback when needed.
+- Improved minimum-window layout and preserved a usable grid at 980×620.
+- Implemented fixed-height owner-drawn right sidebar with text padding.
+- Fixed Arabic selection badge character encoding via localization key.
+- Replaced Unicode text icons with GDI+ drawn reusable icons; retained functional button colors.
+- Updated visible product version and optional installer metadata.
+- Normalized Dashboard shortcuts, troubleshooting actions and report cases.
+- Kept gated batch execution safeguards, no unintended Windows changes during testing.
 
-- Added BatchEngine.psm1 with durable batch IDs and journals for up to 25 selected items.
-- Added batch impact preview, verified SHA256 backup manifest and separate data-loss risk approval.
-- Added Runner.Batch.ps1 for process-isolated PowerShell execution with Windows UAC on real changes.
-- Wired package Install/Upgrade/Uninstall and optional current-user AppX removal to reviewed batch commands.
-- Added hard checkpoint gate: create and verify a new Windows Restore Point before the first system change or block all changes.
-- Added safe cancellation requests, per-item success/failure journal, partial status, and refused duplicate executions.
-- Extended existing color-coded icons/Select All while preventing protected AppX selection.
-- Tested 20 synthetic items (execute + rollback), separate PowerShell runner, restore-point fail-closed and GUI.
-- Portable EXE and license All Rights Reserved for original ProTech code.
-- Release remains Preview because destructive VM tests, full Windows 10/ARM64 support, and digital signing are outstanding.
+Known gaps: Actual WinGet/AppX modifying actions need isolated VM acceptance tests; no Authenticode certificate. Windows 10 and ARM64 remain unverified.
