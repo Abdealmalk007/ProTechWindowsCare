@@ -1,0 +1,21 @@
+﻿{
+    "Version":  "3.6.2 QA and UI Hardening Portable Preview",
+    "RegressionGroupsPassed":  14,
+    "RegressionGroupsFailed":  0,
+    "GuiAssertionsPassed":  84,
+    "GuiAssertionsFailed":  0,
+    "TestHost":  "Windows 11 Pro x64 build 22621",
+    "IsolatedInstallerChecks":  "PASS; test folder only",
+    "StandaloneExecutableSmoke":  "PASS",
+    "AdditionalQATests":  "PowerShell syntax, CSV injection, app catalog, UI layout guards: PASS",
+    "ImportedLegacyReviewItems":  237,
+    "LegacyExecutionEnabled":  0,
+    "WindowsSystemMutationsMade":  false,
+    "RealWinGetAppXVmCertification":  "NOT TESTED",
+    "Windows10Arm64":  "UNVERIFIED",
+    "Windows10X64":  "NOT_RUNTIME_TESTED",
+    "Windows10X86":  "NOT_RUNTIME_TESTED",
+    "Authenticode":  "NotSigned",
+    "Channel":  "PREVIEW_NOT_STABLE",
+    "InstallerSeparateExeSmoke":  "PASS"
+}

@@ -1,21 +1,28 @@
-# ProTech Windows Care v3.3.1 — Portable Preview
+# ProTech Windows Care v3.6.2 — QA & UI Hardening Portable Preview
 
-**PORTABLE — NO INSTALLATION REQUIRED.** Run `ProTech_Windows_Care_Setup.exe` directly from a folder or USB drive. Optional installation is available using `--setup-ui`. This standalone launcher includes ProTech resources and uses the Windows-provided PowerShell 5.1 / .NET Framework runtime.
+**PRE-RELEASE / NOT STABLE** — Copyright © 2026 ProTech, All Rights Reserved.
 
-## What's fixed in this update
-- Responsive WinForms toolbars automatically wrap buttons and resize vertically instead of hiding commands outside the window.
-- Corrected the Arabic selection counter's corrupt text encoding.
-- Increased sidebar width and used owner-drawn, consistently spaced navigation items with safe padding.
-- Replaced unreliable font glyphs with crisp GDI+ icon drawings, preserving role-specific button colors.
-- Reduced excessive unused spacing and preserved usable grid space in narrow windows.
-- Separated adjacent command statements in the Dashboard, troubleshooting and report handlers.
-- Retained Select All, Clear/Invert Selection, itemized preview, batch journaling and verified-backup guards.
+ProTech Windows Care provides Windows diagnostics, organized maintenance tools, Back/Forward/Home/Refresh navigation, a searchable professional data view, Arabic/English interface, reporting and guarded package workflows.
 
-## How modifying operations work
-Supported curated WinGet installs, upgrades and uninstalls and optional current-user AppX removal are routed through the PowerShell batch runner. They require a preview, a SHA256-verified backup, explicit user approval, an Administrator/UAC prompt, and a **new verified System Restore point before any system change**. The runner stops on an error and records per-item outcomes.
+## Downloads
+- [Portable EXE (no installation)](https://github.com/Abdealmalk007/ProTechWindowsCare/releases/download/v3.6.2-qa-portable-preview/ProTech_Windows_Care_Setup.exe)
+- [Setup EXE (installer interface)](https://github.com/Abdealmalk007/ProTechWindowsCare/releases/download/v3.6.2-qa-portable-preview/ProTech_Windows_Care_Installer_v3.6.2.exe)
+- [Portable ZIP](https://github.com/Abdealmalk007/ProTechWindowsCare/releases/download/v3.6.2-qa-portable-preview/ProTech_Windows_Care_Portable.zip)
+- [SHA-256 checksums](https://github.com/Abdealmalk007/ProTechWindowsCare/releases/download/v3.6.2-qa-portable-preview/SHA256SUMS.txt)
 
-Restore points do not guarantee recovery of all deleted application data, and a new point can be rate-limited (commonly once per 24 hours). Do not treat app removal as automatically reversible.
+**Important:** The historical Portable EXE filename contains the word `Setup` but its default behavior is portable. Use the separate `Installer_v3.6.2.exe` file for a visible installation interface.
 
-**Version 3.3.1 is Preview, not Stable.** Windows 11 Pro x64 GUI and synthetic batch testing passed. Destructive app operations have not yet been validated in a clean VM, and Windows 10/ARM64 are not independently verified. The EXE is **unsigned**, so SmartScreen may warn.
+## What changed in v3.6.2
+- Corrected hidden toolbar layout wasting vertical space in focused data details.
+- Strengthened CSV spreadsheet formula neutralization against whitespace/control prefixes.
+- Corrected Windows Server misdetection and synchronized release/EXE metadata.
+- Preserved seven workspaces and 237 legacy review-only entries. Imported legacy commands cannot execute.
 
-**© 2026 ProTech — All Rights Reserved** for original ProTech code, design and documents; third-party components retain their own rights.
+## Verification
+- Windows 11 Pro x64 (build 22621): **84/84 GUI assertions**, **14/14 regression test groups**, 72 PowerShell scripts parsed, plus targeted security/compatibility checks.
+- Portable and installer executables passed embedded-archive smoke checks. Master ZIP hashes validated after extraction.
+- Windows system mutations were **not** performed during the QA runs.
+
+**Windows 10 (x86/x64) and Windows 11 ARM64 remain unverified on real systems.** Real WinGet/AppX installation/removal, recovery and restore behavior must be certified in disposable VMs before a Stable release. There is no Authenticode signature; SmartScreen may warn.
+
+Website: https://alghad.digital/programs/care/

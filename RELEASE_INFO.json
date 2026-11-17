@@ -1,19 +1,15 @@
 ﻿{
-    "Version":  "3.3.1",
-    "Channel":  "PORTABLE_PREVIEW",
-    "Product":  "ProTech Windows Care",
-    "PortableByDefault":  true,
-    "NoInstallationRequired":  true,
-    "OptionalSetupArgument":  "--setup-ui",
-    "PrimaryAsset":  "ProTech_Windows_Care_Setup.exe",
-    "Requires":  [
-                     "Windows PowerShell 5.1",
-                     ".NET Framework",
-                     "WinGet optional"
-                 ],
-    "License":  "Copyright (c) 2026 ProTech. All Rights Reserved for original components.",
-    "TestHost":  "Windows 11 Pro x64 Build 22621",
-    "DigitalSignature":  "NOT_SIGNED",
-    "Windows10ARM64":  "UNVERIFIED",
-    "RealWindowsAppChanges":  "PENDING_ISOLATED_VM_TESTS"
+    "Name":  "ProTech Windows Care",
+    "Version":  "3.6.2",
+    "Channel":  "PORTABLE_PREVIEW_NOT_STABLE",
+    "PrimaryFile":  "ProTech_Windows_Care_Setup.exe",
+    "PortableNoInstallationRequired":  true,
+    "OptionalInstallationSwitch":  "--setup-ui",
+    "DashboardCards":  4,
+    "GroupedNavigation":  7,
+    "LegacyReviewOnly":  237,
+    "License":  "Copyright (c) 2026 ProTech — All Rights Reserved for original works",
+    "Signed":  false,
+    "InstallerFile":  "ProTech_Windows_Care_Installer_v3.6.2.exe",
+    "InstallerDefaultsToSetupUI":  true
 }

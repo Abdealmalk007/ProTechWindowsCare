@@ -1,0 +1,2 @@
+# Known limitations v3.6.2
+Windows 10 x86/x64 and Windows 11 ARM64 have not been tested on actual hosts. Modifying WinGet/AppX transactions are not certified without an isolated VM snapshot. Some functions depend on OS edition or privileges. No Authenticode signature. This Preview is not 100%-guaranteed error free. The 237 imported legacy commands are only reference catalog entries, not executable actions.
